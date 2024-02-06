@@ -19,6 +19,10 @@ app.use(cors(
   }
 ));
 
+router.get('/', (req, res) =>{
+  res.send("Hello");
+});
+
 
 // ************ Link the router file ************
 app.use(require('./router/auth'));
